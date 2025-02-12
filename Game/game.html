@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap"
+        rel="stylesheet">
+    <title>Even or Odd Game</title>
+</head>
+
+<body>
+    <h2>Even or Odd Game</h1>
+
+        <div class="game-wrapper">
+            <div class="display">
+                <div class="user__display">
+                    <p>Your Number: <span></span></p>
+                    <div class="user__image-container">
+                        <img id="user-img1" class="user-image" src="./fingers-image-one.png"
+                            alt="finger image showing one">
+                        <img id="user-img2" class="user-image" src="./fingers-image-two.png"
+                            alt="fingers image showing two">
+                        <img id="user-img3" class="user-image" src="./fingers-image-three.png"
+                            alt="fingers image showing three">
+                        <img id="user-img4" class="user-image" src="./fingers-image-four.png"
+                            alt="fingers image showing four">
+                        <img id="user-img5" class="user-image" src="./fingers-image-five.png"
+                            alt="fingers image showing five">
+                    </div>
+
+                </div>
+                <div class="computer__display">
+                    <p>Computer's Number: <span></span></p>
+                    <div class="computer__image-container">
+                        <img id="computer-img1" class="computer-image" src="./fingers-image-one.png"
+                            alt="finger image showing one">
+                        <img id="computer-img2" class="computer-image" src="./fingers-image-two.png"
+                            alt="fingers image showing two">
+                        <img id="computer-img3" class="computer-image" src="./fingers-image-three.png"
+                            alt="fingers image showing three">
+                        <img id="computer-img4" class="computer-image" src="./fingers-image-four.png"
+                            alt="fingers image showing four">
+                        <img id="computer-img5" class="computer-image" src="./fingers-image-five.png"
+                            alt="fingers image showing five">
+                    </div>
+                </div>
+
+
+            </div>
+
+            <div id="result">
+            </div>
+
+            <div id="score">
+                <p>User Score: <span id="user-score">0</span></p>
+                <span>|</span>
+                <p>Computer Score: <span id="computer-score">0</span></p>
+            </div>
+
+            <div id="choice">
+                <p>Choose Even or Odd:</p>
+                <button id="even">Even</button>
+                <button id="odd">Odd</button>
+            </div>
+
+            <div id="numbers">
+                <p>Select a Number (1-5):</p>
+                <button class="number" data-target="img1">1</button>
+                <button class="number" data-target="img2">2</button>
+                <button class="number" data-target="img3">3</button>
+                <button class="number" data-target="img4">4</button>
+                <button class="number" data-target="img5">5</button>
+            </div>
+
+            <button id="start">Start</button>
+            <button id="next">Next</button>
+            <button id="quit">Quit Game</button>
+        </div>
+
+        <div id="game-over">
+        </div>
+        <button id="play-again">Play Again</button>
+
+        <script src="index.js"></script>
+</body>
+
+</html>
